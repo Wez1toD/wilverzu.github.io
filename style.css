@@ -217,40 +217,24 @@ nav ul li a:hover {
 /* Seccion Footer - Contactos */
 #contacto {
 	background-color: #222;
-	height: 200px;
-	padding: 20px;
+	padding: 30px 50px;
 
-	margin-top: 100px;
+	margin-top: 70px;
 	position: relative;
 
 	display: flex;
-	align-items: flex-end;
-	justify-content: center;
-}
-
-#contacto .contacto_contacto {
-	position: absolute;
-	top: 0;
-	left: 50%;
-	transform: translate(-50%, -50%);
-
-	border-radius: 20px;
-	background-color: #333;
-	box-shadow: 0 0 20px #222;
-	padding: 30px;
-
-	min-width: 300px;
-	width: 100%;
-	max-width: 600px;
-	display: flex;
-	justify-content: center;
 	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	gap: 20px;
 }
+
 #contacto .contacto_contacto a {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	font-weight: 700;
 
-	padding: 15px 25px;
+	height: 80px;
+	padding: 0 25px;
 	background-color: #784088;
 	border-radius: 20px;
 
@@ -278,27 +262,39 @@ nav ul li a:hover {
 }
 
 #contacto .contacto_contacto a img {
-	width: 48px;
-	height: 48px;
+	width: 40px;
+	height: 40px;
+}
+
+#contacto .creator {
+	margin: 0;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-100%);
+
+	font-size: 0.7rem;
+	font-weight: 600;
+
+	color: var(--text-light);
 }
 
 #contacto .contacto_redes {
-	min-width: 300px;
+	height: 80px;
+
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: space-evenly;
-	gap: 15px;
+	gap: 20px;
 
-	margin-top: 1rem;
-	max-width: 800px;
-	padding: 15px;
+	padding: 0 20px;
 	border-radius: 20px;
 	background-color: #ddd;
 }
 #contacto .contacto_redes img {
-	width: 55px;
-	height: 55px;
+	width: 45px;
+	height: 45px;
 	transition: all 0.2s;
 }
 #contacto .contacto_redes img:hover {
@@ -338,5 +334,9 @@ nav ul li a:hover {
 	section {
 		overflow-y: auto;
 		justify-content: start;
+	}
+
+	#contacto {
+		justify-content: center;
 	}
 }

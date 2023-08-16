@@ -243,18 +243,20 @@ nav ul li a:hover {
 	width: 100%;
 	max-width: 600px;
 	display: flex;
-	justify-content: space-evenly;
+	justify-content: center;
 	align-items: center;
-	flex-wrap: wrap;
-	gap: 25px;
 }
 #contacto .contacto_contacto a {
-	font-size: 1.2rem;
-	font-weight: 500;
+	font-size: 1.7rem;
+	font-weight: 700;
 
 	padding: 15px 25px;
 	background-color: #784088;
 	border-radius: 20px;
+
+	display: flex;
+	align-items: center;
+	gap: 15px;
 
 	text-decoration: none;
 	color: var(--text-light);
@@ -273,6 +275,11 @@ nav ul li a:hover {
 	outline-color: #784088;
 	outline-offset: 15px;
 	text-shadow: 0px 0px 2px #ddd;
+}
+
+#contacto .contacto_contacto a img {
+	width: 48px;
+	height: 48px;
 }
 
 #contacto .contacto_redes {
@@ -331,10 +338,5 @@ nav ul li a:hover {
 	section {
 		overflow-y: auto;
 		justify-content: start;
-	}
-
-	#contacto .contacto_contacto {
-		padding: 15px 18px;
-		gap: 10px;
 	}
 }
